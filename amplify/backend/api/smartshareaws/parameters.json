@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "smartshareaws",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authsmartshareaws4879c3b3",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
