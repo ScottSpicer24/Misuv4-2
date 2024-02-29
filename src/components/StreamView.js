@@ -6,7 +6,7 @@ import { toggleRingStream } from "../services/deviceServices";
 import { showToast } from "../utils/toast";
 import * as ScreenOrientation from 'expo-screen-orientation';
 import CryptoJS from "crypto-js";
-import config from "C:/Users/Jack/Desktop/misu4/aws-exports";
+import config from "../../aws-exports";
 import publicIP from 'react-native-public-ip';
 
 let { width, height } = Dimensions.get("screen") // Device screen height and width

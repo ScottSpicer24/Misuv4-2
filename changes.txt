@@ -1,0 +1,24 @@
+"react-native-arrow-view": "^1.0.1",  --> removed
+"aws-amplify": "^6.0.18", --> "aws-amplify": "^5.0.16",
+ "react-navigation": "^5.0.0", -->  "react-navigation": "^4.1.1",
+
+after resolved dependencies:
+npm update @babel/core @babel/plugin-transform-react-jsx
+
+
+removed: react-native-reanimated/plugin.. no change
+
+npm uninstall metro-react-native-babel-preset --force
+
+npm install -g @aws-amplify/cli
+
+in bable config:
+presets: ['babel-preset-expo',
+      ["@babel/preset-react", {
+        "runtime": "automatic"
+      }]],
+
+and installed @babel/preset-react
+
+src\components\StreamView.js: line 9 --> import config from "../../aws-exports"; 
+src\services\websocketClient.js: line 2 --> import config from "../../aws-exports";

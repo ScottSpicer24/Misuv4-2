@@ -1,5 +1,5 @@
 import queryString from "query-string";
-import config from "C:/Users/Jack/Desktop/misu4/aws-exports";
+import config from "../../aws-exports";
 
 /* To send a message to the server, use websocketClient.send({message}) on the screen you are sending a message from */
 
