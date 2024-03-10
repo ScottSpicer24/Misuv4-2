@@ -1,5 +1,5 @@
 import Amplify from "aws-amplify";
-import Expo from 'expo'
+import Expo from 'expo';
 import React, { useState } from "react";
 import { Text, View, StatusBar, Dimensions, Platform } from "react-native";
 import Spinner from "react-native-loading-spinner-overlay";
